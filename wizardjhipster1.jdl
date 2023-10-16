@@ -1,0 +1,55 @@
+application {
+  config {
+    applicationType monolith
+    authenticationType jwt
+    baseName wizardjhipster1
+    blueprints []
+    buildTool maven
+    cacheProvider redis
+    clientFramework react
+    clientPackageManager npm
+    clientTheme yeti
+    creationTimestamp 1697436677387
+    databaseType sql
+    devDatabaseType mysql
+    dtoSuffix DTO
+    enableGradleEnterprise false
+    enableHibernateCache true
+    enableSwaggerCodegen false
+    enableTranslation true
+    jhiPrefix jhi
+    languages [en]
+    messageBroker false
+    microfrontend false
+    microfrontends []
+    nativeLanguage en
+    otherModules []
+    packageName my.codebridge.community.wizardjhipster1
+    prodDatabaseType mysql
+    reactive true
+    searchEngine false
+    serverPort 8080
+    serviceDiscoveryType eureka
+    skipClient false
+    skipUserManagement false
+    testFrameworks []
+    websocket false
+    withAdminUi true
+  }
+
+  entities WizardjhipsterJson
+}
+
+entity WizardjhipsterJson {
+  projectname String
+  auth String
+  database String
+  stack String
+  services String
+}
+
+
+paginate * with pagination
+service * with serviceImpl
+dto * with mapstruct
+
